@@ -9,7 +9,7 @@
 ## Installation
 Copy `application/libraries/Template.php` to your project folder.
 
-Make sure what your `application/cache` folder have permissions to write (0755).
+Make sure that your `application/cache` folder have permissions to write (0755).
 
 Add `template` to libraries autoload or load this library in your controller.
 
