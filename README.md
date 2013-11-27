@@ -21,17 +21,18 @@ Add `template` to libraries autoload or load this library in your controller.
     <?php
     public function index()
     {
-        $data = array('sample_var' => 'SAMPLE_VAR');
+        $data = array('sample_var' => 'SAMPLE_VAR', 'var_with_html' => 'Var with <b>HTML</b>');
         $this->template->parse_view('welcome_message.php', $data);
     }
     ?>
 
 ####View:
     {{sample_var}}
+    {{!var_with_html}}
 
 ####Output:
     SAMPLE_VAR
-
+    Var with <b>HTML</b>
 ###Boolean variables
 ####Controller:
     <?php

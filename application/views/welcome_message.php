@@ -79,17 +79,19 @@
                     &lt;?php<br />
                     public function index()<br />
                     {<br />
-                    &nbsp;&nbsp;&nbsp;&nbsp;$data = array('sample_var' => 'SAMPLE VAR');<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;$data = array('sample_var' => 'SAMPLE VAR', 'var_with_html' => 'Var with <b>HTML</b>');<br />
                     &nbsp;&nbsp;&nbsp;&nbsp;$this->template->parse_view('welcome_message.php', $data);<br />
                     }
                 </code>
                 <strong>View:</strong>
                 <code>
-                    &#123;&#123;sample_var&#125;&#125;
+                    &#123;&#123;sample_var&#125;&#125;<br>
+                    &#123;&#123;!var_with_html&#125;&#125;
                 </code>
                 <b>Output:</b><br />
                 <code>
-                {{sample_var}}
+                {{sample_var}}<br/>
+                {{!var_with_html}}
                 </code>
                 <h2>Boolean variables</h2>
                 <p></p>

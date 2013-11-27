@@ -21,6 +21,7 @@ class Welcome extends CI_Controller {
 	{
                 $data = array();
                 $data['sample_var'] = 'SAMPLE VAR';
+                $data['var_with_html'] = 'Var with <b>HTML</b>';
                 $data['true_var'] = TRUE;
 		$data['list'][] = array('name' => 'John', 'age' => 41);
                 $data['list'][] = array('name' => 'Andy', 'age' => 17);
