@@ -32,7 +32,7 @@ Add `template` to libraries autoload or load this library in your controller.
 
 ####Output:
     SAMPLE_VAR
-    Var with **HTML**
+    Var with <b>HTML</b>
 ###Boolean variables
 ####Controller:
     <?php
